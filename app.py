@@ -167,7 +167,9 @@ if (st.sidebar.button('🔎 Search', on_click=callback)
                           mydict=new_recommendations(hotel_select, country_select, cosine_similarities=cosine),
                           city=country_select,
                           genre='Reviews'))
-
+else:
+    st.image('image/HOTEL.png', caption='Created by 4N')
+	
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
